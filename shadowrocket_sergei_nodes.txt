@@ -1,2 +1,0 @@
-vless://5bd20cc7-8169-44cb-b34d-7d45b1b9158e@fakkanet.ru:443?encryption=none&flow=xtls-rprx-vision&fp=edge&pbk=pI-c8k5BNh59kpmkSDfxYNLMymLK-cZ-FS8eXUMdqyw&security=reality&sid=1726&sni=www.google.com&spx=%2FsxiUu5E0UyZjxk4&type=tcp#VLESS-Sergei
-vless://0182f180-19b7-47b9-be0d-6aab6adfd0f2@fakkaf.ru.net:2053?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=8WaJDISUOlX56PZko0bBJw9bz4AKPR6ij-9XDfSbGxY&security=reality&sid=d3c67406130b3f&sni=www.google.com&spx=%2FIAUJYDFAyuGwNDT&type=tcp#FALLBACK-Sergei
