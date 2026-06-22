@@ -1,0 +1,23 @@
+# WHITELIST rules for Shadowrocket
+# Public-safe: no credentials.
+# Used by: Россия_напрямую_остальное_VPN.conf
+
+# Trading / finance
+DOMAIN-SUFFIX,bingx.com
+DOMAIN-SUFFIX,bingbon.com
+
+# Government / city / medical
+DOMAIN-SUFFIX,gosuslugi.ru
+DOMAIN-SUFFIX,esia.gosuslugi.ru
+DOMAIN-SUFFIX,mos.ru
+DOMAIN-SUFFIX,nalog.gov.ru
+DOMAIN-SUFFIX,emias.info
+
+# Mobile operators
+DOMAIN-SUFFIX,mts.ru
+DOMAIN-SUFFIX,beeline.ru
+DOMAIN-SUFFIX,megafon.ru
+
+# Russian apps that complained about VPN
+DOMAIN-SUFFIX,vkusnoitochka.ru
+DOMAIN-SUFFIX,autodoc.ru
