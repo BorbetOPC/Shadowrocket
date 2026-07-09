@@ -1,0 +1,40 @@
+name: Update Shadowrocket rule sets
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily at 03:17 UTC / 06:17 Moscow time
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-rules:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Update generated rule lists
+        run: python3 scripts/update_rules.py
+
+      - name: Commit changes if needed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- release; then
+            echo "No rule-set changes."
+            exit 0
+          fi
+
+          git add release/*.list
+          git commit -m "Update generated Shadowrocket rule sets"
+          git push
